@@ -49,7 +49,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGp-IG-R8Q">
-                                <rect key="frame" x="18" y="755" width="378" height="57"/>
+                                <rect key="frame" x="18" y="727" width="378" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Send Info">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,16 +59,25 @@
                                     <segue destination="HII-VB-EMR" kind="presentation" modalPresentationStyle="fullScreen" id="WOo-YR-lJo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BQA-7E-3Db">
+                                <rect key="frame" x="18" y="808" width="378" height="30"/>
+                                <state key="normal" title="Already registered"/>
+                                <connections>
+                                    <action selector="alreadyRegistered:" destination="nsy-QF-XC9" eventType="touchUpInside" id="zpr-xv-J93"/>
+                                    <segue destination="HII-VB-EMR" kind="presentation" modalPresentationStyle="fullScreen" id="oq7-9D-sOn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6jx-Nk-uEp" secondAttribute="trailing" constant="1" id="09a-p2-Uf5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1TZ-m6-1Br" secondAttribute="trailing" constant="18" id="1aJ-9c-9Vi"/>
                             <constraint firstItem="SfU-MT-nV5" firstAttribute="top" secondItem="Vmz-tJ-fcE" secondAttribute="bottom" constant="50" id="1cm-Ob-lpz"/>
+                            <constraint firstItem="BQA-7E-3Db" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="5cf-qq-krh"/>
                             <constraint firstItem="6jx-Nk-uEp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="6mG-2F-uCy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BQA-7E-3Db" secondAttribute="bottom" constant="24" id="8q5-Bf-St5"/>
                             <constraint firstItem="SlZ-yd-1jD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="ALS-vF-qmb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SfU-MT-nV5" secondAttribute="trailing" constant="18" id="Cbl-EF-F6L"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fGp-IG-R8Q" secondAttribute="bottom" constant="50" id="CeS-z9-yLi"/>
                             <constraint firstItem="fGp-IG-R8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="I93-qt-4FM"/>
                             <constraint firstItem="fGp-IG-R8Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1TZ-m6-1Br" secondAttribute="bottom" constant="50" id="JI2-l2-Vf5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SlZ-yd-1jD" secondAttribute="trailing" constant="18" id="M1n-tB-MV6"/>
@@ -81,9 +90,11 @@
                             <constraint firstItem="sM3-EI-GlG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="Vkm-yK-OBm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fGp-IG-R8Q" secondAttribute="trailing" constant="18" id="W5Z-Eu-HdS"/>
                             <constraint firstItem="6jx-Nk-uEp" firstAttribute="top" secondItem="SlZ-yd-1jD" secondAttribute="bottom" constant="24" id="ZeY-B8-Fz5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BQA-7E-3Db" secondAttribute="trailing" constant="18" id="Zzj-jq-0Jb"/>
                             <constraint firstItem="sM3-EI-GlG" firstAttribute="top" secondItem="6jx-Nk-uEp" secondAttribute="bottom" constant="50" id="hGN-0R-Arv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vmz-tJ-fcE" secondAttribute="trailing" constant="18" id="lsH-oY-KtR"/>
                             <constraint firstItem="Vmz-tJ-fcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="olK-Lz-pmp"/>
+                            <constraint firstItem="BQA-7E-3Db" firstAttribute="top" secondItem="fGp-IG-R8Q" secondAttribute="bottom" constant="24" id="x3H-hH-zbI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -94,6 +105,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="nsy-QF-XC9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
@@ -159,4 +171,7 @@
             <point key="canvasLocation" x="1207" y="137"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oq7-9D-sOn"/>
+    </inferredMetricsTieBreakers>
 </document>

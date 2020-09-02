@@ -49,4 +49,8 @@ final class StartGameViewController: UIViewController {
       }
     }
   }
+
+  @IBAction func alreadyRegistered(_ sender: Any) {
+    
+  }
 }
