@@ -13,6 +13,7 @@
 		18789A0025000D27000113BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187899FE25000D27000113BD /* Main.storyboard */; };
 		18789A0225000D2A000113BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18789A0125000D2A000113BD /* Assets.xcassets */; };
 		18789A0525000D2A000113BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18789A0325000D2A000113BD /* LaunchScreen.storyboard */; };
+		18789A0D25000FBA000113BD /* GoogleService-Info (6).plist in Resources */ = {isa = PBXBuildFile; fileRef = 18789A0C25000FBA000113BD /* GoogleService-Info (6).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		18789A0125000D2A000113BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18789A0425000D2A000113BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18789A0625000D2A000113BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18789A0C25000FBA000113BD /* GoogleService-Info (6).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (6).plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				187899FC25000D27000113BD /* ViewController.swift */,
 				187899FE25000D27000113BD /* Main.storyboard */,
 				18789A0125000D2A000113BD /* Assets.xcassets */,
+				18789A0C25000FBA000113BD /* GoogleService-Info (6).plist */,
 				18789A0325000D2A000113BD /* LaunchScreen.storyboard */,
 				18789A0625000D2A000113BD /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18789A0D25000FBA000113BD /* GoogleService-Info (6).plist in Resources */,
 				18789A0525000D2A000113BD /* LaunchScreen.storyboard in Resources */,
 				18789A0225000D2A000113BD /* Assets.xcassets in Resources */,
 				18789A0025000D27000113BD /* Main.storyboard in Resources */,
