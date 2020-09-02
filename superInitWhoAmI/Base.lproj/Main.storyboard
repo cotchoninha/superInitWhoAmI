@@ -123,8 +123,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp0-lE-kNx">
-                                <rect key="frame" x="24" y="222.5" width="366" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp0-lE-kNx">
+                                <rect key="frame" x="24" y="222.5" width="366" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,7 +150,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Pv2-42-soF"/>
                     <connections>
-                        <outlet property="ListOFWhoAmI" destination="rp0-lE-kNx" id="Oxx-QZ-zgZ"/>
+                        <outlet property="listOFWhoAmI" destination="rp0-lE-kNx" id="Oxx-QZ-zgZ"/>
                         <outlet property="yourEmailTF" destination="jfb-Ks-Pgz" id="x3u-qX-fVs"/>
                     </connections>
                 </viewController>
