@@ -34,9 +34,9 @@ class ViewController: UIViewController {
   private func addUser(yourEmail: String, theirEmail: String, character: String) {
       var ref: DocumentReference? = nil
       ref = dataBase.collection("users").addDocument(data: [
-          "yourEmail": yourEmail,
-          "theirEmail": theirEmail,
-          "character": character
+        "yourEmail": yourEmail.lowercased(),
+        "theirEmail": theirEmail.lowercased(),
+        "character": character
       ]) { err in
           if let err = err {
               print("Error adding document: \(err)")

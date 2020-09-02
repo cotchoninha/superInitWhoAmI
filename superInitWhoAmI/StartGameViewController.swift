@@ -20,6 +20,8 @@ final class StartGameViewController: UIViewController {
 
   @IBOutlet var yourEmailTF: UITextField!
 
+  @IBOutlet var startGameButton: UIButton!
+  
   @IBOutlet var listOFWhoAmI: UILabel!
 
   let dataBase = Firestore.firestore()
@@ -35,9 +37,9 @@ final class StartGameViewController: UIViewController {
         switch result {
         case .success(let user):
           if let user = user {
-            print("User: \(user)")
-            if user.yourEmail != yourEmail {
+            if user.theirEmail.lowercased() != yourEmail.lowercased() {
               self.listOFWhoAmI.text?.append("\(user.theirEmail) is \(user.character)\n")
+
             }
           } else {
 
@@ -48,9 +50,10 @@ final class StartGameViewController: UIViewController {
         }
       }
     }
+    startGameButton.isEnabled = false
   }
 
   @IBAction func alreadyRegistered(_ sender: Any) {
-    
+
   }
 }
