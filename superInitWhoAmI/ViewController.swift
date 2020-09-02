@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -16,14 +17,33 @@ class ViewController: UIViewController {
 
   @IBOutlet var characterTF: UITextField!
 
+  let dataBase = Firestore.firestore()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+
   }
 
   @IBAction func sendInfo(_ sender: Any) {
-    
+    guard let yourEmail = yourEmailTF.text, let theirEmail = targetEmailTF.text, let character = characterTF.text else {
+      return
+    }
+    addUser(yourEmail: yourEmail, theirEmail: theirEmail, character: character)
    }
+
+  private func addUser(yourEmail: String, theirEmail: String, character: String) {
+      var ref: DocumentReference? = nil
+      ref = dataBase.collection("users").addDocument(data: [
+          "yourEmail": yourEmail,
+          "theirEmail": theirEmail,
+          "character": character
+      ]) { err in
+          if let err = err {
+              print("Error adding document: \(err)")
+          } else {
+              print("Document added with ID: \(ref!.documentID)")
+          }
+      }
+  }
 }
 

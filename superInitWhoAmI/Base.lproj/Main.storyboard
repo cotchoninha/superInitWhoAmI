@@ -56,6 +56,7 @@
                                 </state>
                                 <connections>
                                     <action selector="sendInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fk6-TE-hjQ"/>
+                                    <segue destination="HII-VB-EMR" kind="presentation" modalPresentationStyle="fullScreen" id="WOo-YR-lJo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -95,6 +96,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+        <!--Start Game View Controller-->
+        <scene sceneID="h4b-VL-wgL">
+            <objects>
+                <viewController id="HII-VB-EMR" customClass="StartGameViewController" customModule="superInitWhoAmI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drA-ej-PNi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your e-mail?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNi-Pv-Zoe">
+                                <rect key="frame" x="24" y="94" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdM-Af-c8E">
+                                <rect key="frame" x="24" y="782" width="366" height="30"/>
+                                <state key="normal" title="Start game"/>
+                                <connections>
+                                    <action selector="starGame:" destination="HII-VB-EMR" eventType="touchUpInside" id="m1K-ig-gD4"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type your email and start game" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jfb-Ks-Pgz">
+                                <rect key="frame" x="24" y="138.5" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp0-lE-kNx">
+                                <rect key="frame" x="24" y="222.5" width="366" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jGm-eJ-2ox" firstAttribute="trailing" secondItem="rp0-lE-kNx" secondAttribute="trailing" constant="24" id="ANm-Bo-0Fd"/>
+                            <constraint firstItem="FdM-Af-c8E" firstAttribute="leading" secondItem="jGm-eJ-2ox" secondAttribute="leading" constant="24" id="FNA-7l-9LN"/>
+                            <constraint firstItem="jGm-eJ-2ox" firstAttribute="trailing" secondItem="FdM-Af-c8E" secondAttribute="trailing" constant="24" id="Haf-tk-diK"/>
+                            <constraint firstItem="jfb-Ks-Pgz" firstAttribute="leading" secondItem="jGm-eJ-2ox" secondAttribute="leading" constant="24" id="LVp-3g-Ef0"/>
+                            <constraint firstItem="rp0-lE-kNx" firstAttribute="top" secondItem="jfb-Ks-Pgz" secondAttribute="bottom" constant="50" id="MIk-0L-3Rr"/>
+                            <constraint firstItem="FdM-Af-c8E" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rp0-lE-kNx" secondAttribute="bottom" constant="54" id="TgO-8A-8Vo"/>
+                            <constraint firstItem="jfb-Ks-Pgz" firstAttribute="top" secondItem="ZNi-Pv-Zoe" secondAttribute="bottom" constant="24" id="Wlf-4o-3rg"/>
+                            <constraint firstItem="jGm-eJ-2ox" firstAttribute="bottom" secondItem="FdM-Af-c8E" secondAttribute="bottom" constant="50" id="aIW-5v-daV"/>
+                            <constraint firstItem="ZNi-Pv-Zoe" firstAttribute="leading" secondItem="jGm-eJ-2ox" secondAttribute="leading" constant="24" id="d5j-ck-MTt"/>
+                            <constraint firstItem="jGm-eJ-2ox" firstAttribute="trailing" secondItem="jfb-Ks-Pgz" secondAttribute="trailing" constant="24" id="ge3-GR-3AN"/>
+                            <constraint firstItem="ZNi-Pv-Zoe" firstAttribute="top" secondItem="jGm-eJ-2ox" secondAttribute="top" constant="50" id="iCd-tS-XWU"/>
+                            <constraint firstItem="jGm-eJ-2ox" firstAttribute="trailing" secondItem="ZNi-Pv-Zoe" secondAttribute="trailing" constant="24" id="k6c-ZK-SCv"/>
+                            <constraint firstItem="rp0-lE-kNx" firstAttribute="leading" secondItem="jGm-eJ-2ox" secondAttribute="leading" constant="24" id="kdX-Yx-SOo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jGm-eJ-2ox"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Pv2-42-soF"/>
+                    <connections>
+                        <outlet property="ListOFWhoAmI" destination="rp0-lE-kNx" id="Oxx-QZ-zgZ"/>
+                        <outlet property="yourEmailTF" destination="jfb-Ks-Pgz" id="x3u-qX-fVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6Z-f9-gdo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1207" y="137"/>
         </scene>
     </scenes>
 </document>
